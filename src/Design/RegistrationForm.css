@@ -1,76 +1,101 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f4ef;
-  }
-  
+.fullBody {
+  position: relative;
+width: 100%;
+height: 100%;
+
+background: #F5EFE7;
+
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.form-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  flex: 1;
+  padding: 28px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 15%;
+}
+
+.form-title {
+  position: absolute;
+  margin-top: -180px;
+  margin-left: -2px;
+  font-family: 'DM Serif Display', serif;
+  font-style: bold;
+  font-weight: 400; /* Changed from 100 to 400 for normal weight */
+  font-size: 50px;
+  line-height: 62px;
+  color: #213555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #24315e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1b264b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .form-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 40px;
-    box-sizing: border-box;
-  }
-  
-  .form-illustration {
-    flex: 1;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
-  
-  
+
   .form-content {
-    flex: 1;
-    padding: 28px;
-    max-width: 400px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 15%;
+    max-width: 100%;
+    margin-right: 0;
+    padding: 20px;
   }
-  
-  .form-content h2 {
 
-position: absolute;
-width: 353px;
-height: 50px;
-left: 878px;
-top: 40px;
+  .form-illustration {
+    margin-bottom: 20px;
+  }
 
-font-family: 'DM Serif Display';
-font-style: normal;
-font-weight: 400;
-font-size: 45px;
-line-height: 62px;
-
-color: #213555;
+  .form-title {
+    position: static;
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 28px;
+    line-height: 40px;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  form input {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form button {
-    padding: 10px;
-    background-color: #24315e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #1b264b;
-  }
+}

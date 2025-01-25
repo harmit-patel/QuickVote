@@ -1,29 +1,35 @@
-// App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import LoginPage from './LoginPage';
 import RegistrationForm from './RegistrationForm';
-//import Header from './Header';
+import Dashboard from './Dashboard';
 import HomePage1 from './HomePage1';
 import Features from './Features';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import LoginParticipant from './LoginParticipant';
-//mport RegistrationForm from './RegistrationForm';
-
-
+import QuestionPage from './QuestionPage';
+import AdminDashboard from './AdminDashboard';
+import PollCreationPage from './PollCreationPage';
+import svglogin from './svgLogin';
+import Surveycomponent from './CreateSurvey/SurveyComponent';
+import Pollcomponent from './CreateSurvey/PollComponent';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        {/* <Route path="/" exact component={Header} /> */}
-        <Route path="/" exact component={HomePage1} />
-        <Route path="/features" component={Features} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/register" component={RegistrationForm} />
-        <Route path="/loginparticipant" component={LoginParticipant} />
-       {/* /* <Route path="/register" component={RegistrationForm} /> */}
-      </Switch>
+      <Routes>
+        <Route path="/" element={<HomePage1 />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegistrationForm />} />
+        <Route path="/loginparticipant" element={<LoginParticipant />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/questionpage" element={<QuestionPage />} />
+        <Route path="/admindashboard" element={<AdminDashboard />} />
+        <Route path="/pollcreationpage" element={<PollCreationPage />} />
+        <Route path="/surveycomponent" element={<Surveycomponent />} />
+        <Route path="/pollcomponent" element={<Pollcomponent />} />
+      </Routes>
     </Router>
   );
 }

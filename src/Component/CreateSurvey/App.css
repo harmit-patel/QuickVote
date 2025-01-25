@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+.survey-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.question-container {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f0f8ff;
+  border: 1px solid #d1e7ff;
+  border-radius: 6px;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.question-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1e7ff;
+  border-radius: 4px;
+}
+
+.remove-question-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-question-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option-input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #d1e7ff;
+  border-radius: 4px;
+}
+
+.remove-option-btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-option-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.add-option-btn,
+.add-question-btn,
+.create-survey-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.add-option-btn:hover,
+.add-question-btn:hover,
+.create-survey-btn:hover {
+  background-color: #0056b3;
+}
+
+.create-survey-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.add-question-btn {
+  background-color: #28a745;
+}
+
+.add-question-btn:hover {
+  background-color: #218838;
+}
+
+.add-option-btn {
+  background-color: #17a2b8;
+}
+
+.add-option-btn:hover {
+  background-color: #138496;
+}
+
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.email-domain-input {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Added margin to create a gap */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size:16px
+}
+
+.title {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555; /* Ensure consistent spacing with the text field */
+}
+.end-time-container {
+  margin-top: 0px;
+}
+
+.end-time-input {
+  margin-left: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.title2{
+  margin-top: 25px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px; /* Add some margin to separate from other elements */
+}
+
+.add-option-btn {
+  background-color: #17a2b8;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-option-btn:hover {
+  background-color: #138496;
+}
+
+.add-question-btn {
+  background-color: #28a745;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-question-btn:hover {
+  background-color: #218838;
+}
+
+.survey-title-container {
+  margin-bottom: 37px;
+}
+
+.survey-title-input {
+  width: 85%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+}

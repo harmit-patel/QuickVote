@@ -1,8 +1,8 @@
 
 .login-page {
   position: relative;
-  width: 1600px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   background: #f5efe7;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   left: -250px;
-  top: -100px;
+  top: -50px;
   right: 100px;
   align-items: center;
 }
@@ -73,7 +73,7 @@
 
 .forgot-password {
   font-family: "Padauk", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   color: #499ffe;
   text-decoration: none;
   margin-bottom: 0px;
@@ -81,7 +81,7 @@
 
 .register-link {
   font-family: "Padauk", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   color: #213555;
   text-decoration: none;
   margin-bottom: 10px;

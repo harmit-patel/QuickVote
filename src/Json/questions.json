@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Rome"]
+    },
+    {
+      "id": 2,
+      "question": "Which programming language is used for web development?",
+      "options": ["Python", "JavaScript", "C++", "Java"]
+    },
+    {
+      "id": 3,
+      "question": "What is 2 + 2?",
+      "options": ["3", "4", "5", "6"]
+    }
+  ]
+}

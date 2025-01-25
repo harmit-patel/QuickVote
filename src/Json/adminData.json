@@ -1,0 +1,11 @@
+{
+    "admin": {
+        "email": "harmit.temp26@gmail.com",
+        "role": "Administrator"
+    },
+    "createdSurveys": [
+        { "name": "Election Survey", "id": "02101", "createdDate": "2025-01-01" },
+        { "name": "Community Feedback", "id": "28008", "createdDate": "2025-01-10" },
+        { "name": "Market Research", "id": "90080", "createdDate": "2025-01-15" }
+    ]
+}

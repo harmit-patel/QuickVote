@@ -1,113 +1,172 @@
-
 .login-page {
-    position: relative;
-    width: 1600px;
-    height: 800px;
-    background: #f5efe7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .login-form {
-    position: relative;
-    width: 320px;
-    padding: 15px;
-    background: #f5efe7;
-    border-radius: 8px;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
-    display: flex;
-    flex-direction: column;
-    left: -250px;
-    top: -100px;
-    right: 100px;
-    align-items: center;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: #f5efe7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding to avoid overflow */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.login-form {
+  position: relative;
+  width: 90%;
+  max-width: 320px;
+  padding: 30px 15px; /* Increased padding for better vertical alignment */
+  background: #f5efe7;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center all content vertically */
+  box-sizing: border-box;
+}
+
+.login-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 36px; /* Adjusted for better fit */
+  font-weight: 300;
+  color: #213555;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: -35px;
+}
+
+
+
+.email-label {
+  font-family: "Padauk", sans-serif;
+  font-size: 16px; /* Adjusted font size */
+  color: #213555;
+  align-self: flex-start;
+}
+
+.email-input {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  background: #015fc7;
+  color: #ffffff;
+  font-family: "Padauk", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.generate-otp-button {
+  margin-top: 20px;
+}
+
+.otp-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.otp-popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 320px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+  color: #004aad;
+}
+
+.otp-input {
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+.login-button {
+  width: 300px;
+  height: 40px;
+  background: #015fc7;
+  color: #ffffff;
+  font-family: "Padauk", sans-serif;
+  font-size: 16px; /* Adjusted font size for better readability */
+  font-weight: 1000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  /* display: flex; */
+  align-items: left;
+  justify-content: center;
+}
+
+.login-button:hover {
+  background: #004aa3; /* Slightly darker blue on hover */
+}
+
+/* To reset Link's styling and prevent it from breaking the button */
+a {
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
   .login-title {
-    font-family: "DM Serif Display", serif;
-    font-size: 50px;
-    font-weight: 300;
-    color: #213555;
-    margin-bottom: 20px;
-    margin-left: 340px;
+    font-size: 48px;
   }
-  
+
   .email-label {
-    font-family: "Padauk", sans-serif;
-    font-size: 19px;
-    color: #213555;
-    align-self: flex-start;
-    margin-top: 0px;
+    font-size: 18px;
   }
-  
-  .email-input {
-    width: 100%;
-    height: 35px;
-    padding: 5px 5px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
+
+  .button {
+    font-size: 20px;
   }
-  
-  .password-label {
-    font-family: "Padauk", sans-serif;
-    font-size: 19px;
-    color: #213555;
-    align-self: flex-start;
-    margin-bottom: 0px;
-  }
-  
-  
-  .password-input {
-    width: 100%;
-    height: 35px;
-    padding: 5px 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 0px;
-  }
-  
-  .forgot-password {
-    font-family: "Padauk", sans-serif;
-    font-size: 17px;
-    color: #499ffe;
-    text-decoration: none;
-    margin-bottom: 0px;
-  }
-  
-  .register-link {
-    font-family: "Padauk", sans-serif;
-    font-size: 17px;
-    color: #213555;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  
-  .login-button {
-    width: 100%;
-    height: 40px;
-    background: #015fc7;
-    color: #ffffff;
-    font-family: "Padauk", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 50px;
-  }
-  .register-link{
-    text-decoration: none;
-    color: inherit; /* Optional: Retain the text color */
-  
-  }
-  
-  .login-button:hover {
-    background: #014c99;
-  }
-  
+}

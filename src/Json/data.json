@@ -1,0 +1,9 @@
+{
+    "email": "user@example.com",
+    "surveys": [
+        { "id": "02101", "title": "Election Survey", "endTime": "2025-01-20T22:22:00" },
+        { "id": "28008", "title": "Opinion Poll", "endTime": "2025-01-26T22:24:00"  },
+        { "id": "90080", "title": "Local Election", "endTime": "2025-01-20T22:17:00"  },
+        { "id": "02101", "title": "Community Feedback", "endTime": "2025-01-19T22:24:00"  }
+    ]
+}
